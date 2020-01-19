@@ -20,3 +20,25 @@ function reveal(e) {
 
 HEADSIZE_2.addEventListener('hover' , reveal , false);
 HEADSIZE_3.addEventListener('hover', function(){console.log("Hovered")}, false);*/
+
+
+/*'url('+images[slide-1]+')'*/
+//Automatic Slider
+
+const img = document.querySelector(".image-cover-2");
+
+var images = ['../images/crane.jpg' , '../images/2-image.jpg' , '../images/3-image.jpg' , '../images/4-image.jpg' ,'../images/tool-1.jpg'];
+
+var slide = 0;
+
+function slider(){
+	if(slide<images.length){
+		slide= slide + 1;
+	}else{
+		slide=1;
+	}
+	
+	img.style.backgroundImage = 'linear-gradient(-130deg ,rgba(0, 0, 0, 0.8),rgba(100,167,87,.38)), url("' + images[slide-1] + '")';
+}
+
+setInterval(slider , 3000);
