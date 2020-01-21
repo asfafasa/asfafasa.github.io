@@ -42,3 +42,4 @@ function slider(){
 }
 
 setInterval(slider , 3000);
+
