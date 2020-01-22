@@ -324,7 +324,11 @@ nav a:hover {
 footer{
 	margin: 0;
 	background-color: skyblue;
-	min-height: 160px;
+		
+	
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
 }
 /*---------Body---------*/
 
@@ -391,6 +395,11 @@ div>p{
 	margin: 0 20px;
 }
 
+
+.margin_left h3{
+	margin-left: 10px;
+}
+
 h1.topics{
 	font-size: 50px;
 	margin: 0;
@@ -403,7 +412,7 @@ h1.topics{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 40em;
+	max-height: 40em;
 	width: 100%;
 }
 
@@ -414,7 +423,8 @@ h1.topics{
 	margin-right: 20px;
 	margin-top: 5px;
 	border: 1px solid black;
-	padding: 20px;
+	padding: 8px;
+	display: inline-block;
 }
 
 .topics-list li:hover{
@@ -425,6 +435,12 @@ h1.topics{
 .boxshadow{
 	margin-top: 20px;
 	margin-bottom: 5px;
+}
+
+.box-shadow{
+-webkit-box-shadow: 10px 10px 13px 6px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 10px 13px 6px rgba(0,0,0,0.72);
+box-shadow: 10px 10px 13px 6px rgba(0,0,0,0.72);
 }
 
 .section-boder{
