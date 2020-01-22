@@ -27,7 +27,11 @@ HEADSIZE_3.addEventListener('hover', function(){console.log("Hovered")}, false);
 
 const img = document.querySelector(".image-cover-2");
 
-var images = ['../images/crane.jpg' , '../images/2-image.jpg' , '../images/3-image.jpg' , '../images/4-image.jpg' ,'../images/tool-1.jpg'];
+var images = [];
+
+images[0] = '../images/crane.jpg';
+images[1] = '../images/tool-1.jpg';
+images[2] = '../images/buiding.jpg';
 
 var slide = 0;
 

@@ -83,6 +83,7 @@ h1,h2,a,p,img {
 	line-height: 500px;
 	background-size: cover;
   text-align: center;
+	
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(100,167,87,.38)), url('../images/crane.jpg');
 }
 
@@ -94,7 +95,8 @@ h1,h2,a,p,img {
 	line-height: 700px;
 	background-size: cover;
   text-align: center;
-	background-image: linear-gradient(-130deg ,rgba(0, 0, 0, 0.8),rgba(100,167,87,.38)), url("../images/tool-1.jpg");
+	animation: animate 16s ease-in-out infinite;
+	/*background-image: linear-gradient(-130deg ,rgba(0, 0, 0, 0.8),rgba(100,167,87,.38)), url("../images/tool-1.jpg");*/
 }
 
 
@@ -102,6 +104,22 @@ h1,h2,a,p,img {
 div.image-cover-2{
 	box-shadow:5px 10px 8px #888888;
 }
+
+
+@keyframes animate{
+				0%,100%{
+					background-image: linear-gradient(-130deg ,rgba(0, 0, 0, 0.8),rgba(100,167,87,.38)), url("../images/tool-1.jpg");;
+				}
+				25%{
+					background-image:linear-gradient(rgba(0, 0, 0, 0.9),rgba(196, 86, 190,.6)), url("../images/buiding.jpg");
+				}
+				50%{
+					background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(100,167,87,.6)), url("../images/phone.jpg");
+				}
+				75%{
+					background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(100,167,87,.38)), url('../images/crane.jpg');
+				}
+			}
 
 .image-cover-3{
 	margin: 0;
