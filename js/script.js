@@ -25,9 +25,11 @@ HEADSIZE_3.addEventListener('hover', function(){console.log("Hovered")}, false);
 /*'url('+images[slide-1]+')'*/
 //Automatic Slider
 
-const img = document.querySelector(".image-cover-2");
+const img = document.querySelectorAll("div");
 
-var images = [];
+console.log(img);
+
+/*var images = [];
 
 images[0] = '../images/crane.jpg';
 images[1] = '../images/tool-1.jpg';
@@ -45,5 +47,5 @@ function slider(){
 	img.style.backgroundImage = 'linear-gradient(-130deg ,rgba(0, 0, 0, 0.8),rgba(100,167,87,.38)), url("' + images[slide-1] + '")';
 }
 
-setInterval(slider , 3000);
+setInterval(slider , 3000);*/
 

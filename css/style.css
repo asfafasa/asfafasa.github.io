@@ -95,8 +95,8 @@ h1,h2,a,p,img {
 	line-height: 700px;
 	background-size: cover;
   text-align: center;
-	animation: animate 16s ease-in-out infinite;
-	/*background-image: linear-gradient(-130deg ,rgba(0, 0, 0, 0.8),rgba(100,167,87,.38)), url("../images/tool-1.jpg");*/
+	//animation: animate 16s ease-in-out infinite;
+	background-image: linear-gradient(-130deg ,rgba(0, 0, 0, 0.8),rgba(100,167,87,.38)), url("../images/tool-1.jpg");
 }
 
 
@@ -106,7 +106,7 @@ div.image-cover-2{
 }
 
 
-@keyframes animate{
+/*@keyframes animate{
 				0%,100%{
 					background-image: linear-gradient(-130deg ,rgba(0, 0, 0, 0.8),rgba(100,167,87,.38)), url("../images/tool-1.jpg");;
 				}
@@ -119,7 +119,7 @@ div.image-cover-2{
 				75%{
 					background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(100,167,87,.38)), url('../images/crane.jpg');
 				}
-			}
+			}*/
 
 .image-cover-3{
 	margin: 0;
@@ -414,9 +414,11 @@ div>p{
 }
 
 
-.margin_left h3{
+.margin_left h3,h4{
 	margin-left: 10px;
+	margin: auto 0px;
 }
+
 
 h1.topics{
 	font-size: 50px;
@@ -431,7 +433,7 @@ h1.topics{
 	flex-direction: column;
 	flex-wrap: wrap;
 	max-height: 40em;
-	width: 100%;
+	width: auto;
 }
 
 .topics-list li{
@@ -442,13 +444,32 @@ h1.topics{
 	margin-top: 5px;
 	border: 1px solid black;
 	padding: 8px;
-	display: inline-block;
+	display: flex;
+	text-align: center;
+	justify-content: center;
 }
 
 .topics-list li:hover{
 	background-color: #fa3371;
 	color: #37044a;
 }
+
+
+.background-color{
+	
+	background-color: aquamarine;
+	border:1px solid rgba(0,0,0,1.00);
+
+}
+
+/*.background-color h3,h4{
+	
+	padding: 10px;
+	margin: auto 0;
+	border:1px solid rgba(0,0,0,1.00);
+
+}*/
+
 
 .boxshadow{
 	margin-top: 20px;
@@ -490,4 +511,26 @@ border: 2px solid #a4ba4e;
   text-align: center;
 }
 
+
+
+#table{
+	padding: 0;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border:#333333 dotted 1px;
+	text-align: center;
+	line-height: 25px;
+	width: 500px;
+}
+
+
+#table th,td{
+	border:#333333 dotted 1px;
+	padding: 10px;
+}
+
+
+section>p {
+	text-align: left;
+}
 @media
