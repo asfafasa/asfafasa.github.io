@@ -448,20 +448,21 @@ h1.topics{
 .topics-list{
 	display: inline-flex;
 	flex-direction: column;
-	
-	max-height: 90em;
-	width: 100%;
+	flex-wrap: wrap;
+	width: auto 20px;
 }
 
-@media (min-device-width: 1500px) {
+@media only screen and (max-width: 900px){
+	
 	
 	.topics-list{
-		max-height: 500px;
-		flex-wrap: wrap;
+		height: auto;
+		
 	}
 	
-	
-	
+	.topics-list li{
+		display: block;
+	}
 	
 }
 
@@ -476,6 +477,7 @@ h1.topics{
 	display: flex;
 	text-align: center;
 	justify-content: center;
+	align-content: center;
 }
 
 .topics-list li:hover{
