@@ -91,8 +91,8 @@ h1,h2,a,p,img {
 	margin: 0 auto;
 	padding: 0;
 	width: 90%;
-	max-height: 400px;
-	line-height: 400px;
+	max-height: 350px;
+	line-height: 350px;
 	background-size: cover;
  	text-align: center;
 	animation: animate 16s ease-in-out infinite;
@@ -576,7 +576,7 @@ border: 2px solid #a4ba4e;
 
 
 section>p {
-	text-align: left;
+	text-align: justify;
 }
 
 .tg  {
