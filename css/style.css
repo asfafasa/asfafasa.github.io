@@ -31,7 +31,7 @@ h1,h2,a,p,img {
 
 
 .image-boder{
-	border-radius: 50%;
+	border-radius: 60%;
 	width: 100px
 }
 
@@ -385,12 +385,11 @@ div>img{
 	text-align: center;
 	padding: 40px;
 	margin: 0;
-	font-size: 30px;
+	font-size: 25px;
 	font-family: 'Ubuntu', sans-serif;
 	color: rgb(164, 186, 78);
 	letter-spacing: 2px;
 	font-weight:bold;
-	font-size: 30px;
 	display: block;
 }
 
@@ -505,7 +504,8 @@ border: 2px solid #a4ba4e;
 
 
 .slide{
-	display: none;
+	margin: 10px auto;
+	display: ;
 }
 /* Caption text */
 .text-image {
@@ -600,6 +600,39 @@ section>p {
 .image-size{
 	width: 100px;
 	display: inline-flex;
+}
+
+
+.move-uward  li{
+	  animation: slide 60s linear infinite;
+	list-style: none;
+}
+
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0,-200px, 0);
+  }
+}
+
+.wrapper{
+	height: 300px;
+}
+
+
+.list-style li{
+	text-decoration: none;
+	list-style-type: circle;
+	margin: 0 auto;
+	color: red;
+	
+}
+
+.list-style a{
+	color: black;
 }
 
 @media
